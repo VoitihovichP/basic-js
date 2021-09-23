@@ -26,23 +26,21 @@ export default function transform(arr) {
     throw new Error("\'arr\' parameter must be an instance of the Array!");
   }
 
-  for(let i = 0; i < arr.length; i++) {
+  /* for(let i = 0; i < arr.length; i++) {
     stack.push(arr[i]);
-  }
-  for(let j = 0; j < arr.length; j++) {
-    if(arr[j] === comand[0]) {
-      stack.splice(j++, j++);
+    if(arr[i] === comand[0]) {
+      stack.splice(i++, i++);
     }
-    if(arr[j] === comand[1]) {
-      stack.splice(j--, j--);
+    if(arr[i] === comand[1]) {
+      stack.splice(i--, i--);
     }
-    if(arr[j] === comand[2]) {
-      stack.concat(j++);
+    if(arr[i] === comand[2]) {
+      stack.splice(i,1, stack[i+1]);
     }
-    if(arr[j] === comand[3]) {
-      stack.concat(j--);
+    if(arr[i] === comand[3]) {
+      stack.splice(i,1, stack[i-1]);
     }
   }
-  return stack;
+  return stack; */
   // remove line with error and write your code here
 }
